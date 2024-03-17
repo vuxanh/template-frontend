@@ -9,6 +9,10 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
+        additionalData: `
+        @import "./src/styles/variables.scss";
+        @import "./src/styles/mixins.scss";
+        `,
         sassOptions: {
           includePaths: [path.join(__dirname, "src"), path.join(__dirname, "src/styles")],
         },
