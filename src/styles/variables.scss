@@ -1,0 +1,21 @@
+@import "mixins.scss";
+
+$color-p-orange: #ed8145;
+$color-p-white: #ffffff;
+$color-p-black: #000000;
+$color-p-purple: #c333d6;
+$color-p-green: #57f987;
+
+$space-c-x: 5%;
+
+@include desktop {
+  $space-c-x: 20%;
+}
+
+$space-2xs: calc(1rem * 0.125);
+$space-xs: calc(1rem * 0.25);
+$space-s: calc(1rem * 0.5);
+$space-m: calc(1rem);
+$space-l: calc(1rem * 2);
+$space-xl: calc(1rem * 4);
+$space-2xl: calc(1rem * 8);

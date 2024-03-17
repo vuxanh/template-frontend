@@ -1,0 +1,36 @@
+@import "reset.scss";
+@import "mixins.scss";
+@import "variables.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 13px;
+
+  @include tablet {
+    font-size: 16px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: $space-s;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: $space-s;
+}
