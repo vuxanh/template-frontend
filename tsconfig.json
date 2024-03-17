@@ -19,10 +19,12 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    
+
+    "types": ["vite/client"],
+
     "paths": {
-      "styles/*": ["./src/styles/*"],
-  },
+      "styles/*": ["./src/styles/*"], "assets/*": ["./src/assets/*"]
+    }
   },
   "include": ["src", "src/styles"],
   "references": [{ "path": "./tsconfig.node.json" }]

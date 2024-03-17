@@ -1,0 +1,15 @@
+.root {
+  min-height: 14vh;
+  background-color: $color-p-black;
+  color: $color-p-white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: $space-m 0;
+  gap: $space-m;
+}
+
+.sns {
+  display: flex;
+  gap: $space-s;
+}

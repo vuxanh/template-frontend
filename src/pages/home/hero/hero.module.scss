@@ -1,0 +1,32 @@
+.root {
+  display: flex;
+  width: 100%;
+  background-color: $color-primary;
+  color: $color-p-white;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  gap: $space-xl;
+}
+
+.image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.text {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: $space-m;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

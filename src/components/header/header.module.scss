@@ -1,0 +1,15 @@
+.root {
+  min-height: 50px;
+  box-shadow: 0 5px 5px rgba($color: black, $alpha: 0.2);
+  z-index: 1;
+  padding: $space-s;
+}
+
+.icon {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: $space-s;
+  max-width: 120px;
+  font-size: 0.7rem;
+}
