@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  height: 3rem;
+}
+
+.chip {
+  border-radius: 0;
+  background-color: $color-s-grey;
+  box-shadow: none;
+  color: $color-p-black;
+  font-weight: 600;
+}

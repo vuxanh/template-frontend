@@ -1,0 +1,21 @@
+.root {
+  all: unset;
+  padding: $space-m;
+  border-radius: 12px;
+  background-color: $color-secondary;
+  color: $color-p-white;
+  box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.2);
+
+  &-outline {
+    background-color: none;
+  }
+
+  &:hover,
+  &-pressed {
+    cursor: pointer;
+    background-color: #185bab;
+    color: #f2f2f2;
+    transition: background-color 0.2s ease;
+    box-shadow: none;
+  }
+}

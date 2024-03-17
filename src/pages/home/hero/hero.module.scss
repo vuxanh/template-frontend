@@ -22,11 +22,18 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
-  gap: $space-m;
+}
+
+h1 {
+  margin-bottom: $space-s;
+}
+
+h6 {
+  margin-bottom: $space-m;
 }
 
 .buttons {
   display: flex;
-  justify-content: space-between;
+  gap: $space-m;
   width: 100%;
 }
