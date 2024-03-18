@@ -5,6 +5,10 @@ import hmr from "assets/home/feature/hmr.jpg";
 import architecture from "assets/home/feature/architecture.jpg";
 import customization from "assets/home/feature/customization.jpg";
 import buildTool from "assets/home/feature/build-tool.jpg";
+import hmr1 from "assets/home/feature/hmr-1.jpg";
+import architecture1 from "assets/home/feature/architecture-1.jpg";
+import customization1 from "assets/home/feature/customization-1.jpg";
+import buildTool1 from "assets/home/feature/build-tool-1.jpg";
 import { Button } from "../../../components/button/button";
 import classNames from "classnames";
 
@@ -14,25 +18,25 @@ export const Feature = () => {
       chip: "HMR",
       title: "Hot Module Replacement",
       description: "See your code changes reflected instantly in the browser, without full page reloads.",
-      image: hmr,
+      image: [hmr, hmr1],
     },
     {
       chip: "Build Tools",
       title: "Pre-configured Build Tools",
       description: "Get started quickly with a streamlined development environment.",
-      image: buildTool,
+      image: [buildTool, buildTool1],
     },
     {
       chip: "Architecture",
       title: "Component-Based Architecture",
       description: "Build modular and reusable components for efficient development.",
-      image: architecture,
+      image: [architecture, architecture1],
     },
     {
       chip: "Customization",
       title: "Easy Customization",
       description: "Tailor the template to your specific project needs and design preferences.",
-      image: customization,
+      image: [customization, customization1],
     },
   ];
 
@@ -56,7 +60,11 @@ export const Feature = () => {
                 <Button className={styles["text-button"]}>Find out more</Button>
               </div>
             </div>
-            <img className={classNames(styles["image"], { [styles["image-visible"]]: selected == index })} src={content.image}></img>
+            <div className={classNames(styles["side-image"], { [styles["side-image-visible"]]: selected == index })}>
+              {content.image.map((src, index) => (
+                <img key={index} className={styles["image"]} src={src}></img>
+              ))}
+            </div>
           </div>
         ))}
       </div>

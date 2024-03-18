@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Button } from "../../../../components/button/button";
 import styles from "./tab.module.scss";
+import classNames from "classnames";
 
 interface TabProps {
   chips: string[];
@@ -13,16 +13,15 @@ export const Tab = ({ chips, onPressed }: TabProps) => {
   return (
     <div className={styles["root"]}>
       {chips.map((chip, index) => (
-        <Button
-          className={styles["chip"]}
+        <div
+          className={classNames(styles["chip"], { [styles["chip-selected"]]: selected == index })}
           key={index}
-          isPressed={selected == index}
           onClick={() => {
             setSelected(index);
             onPressed?.(index);
           }}>
           {chip}
-        </Button>
+        </div>
       ))}
     </div>
   );

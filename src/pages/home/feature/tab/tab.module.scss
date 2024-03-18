@@ -4,9 +4,16 @@
 }
 
 .chip {
-  border-radius: 0;
+  cursor: pointer;
+  padding: $space-m;
   background-color: $color-s-grey;
-  box-shadow: none;
   color: $color-p-black;
   font-weight: 600;
+  transition: padding-right 0.5s ease;
+
+  &-selected {
+    padding-right: $space-2xl;
+    background-color: $color-button-hover;
+    color: $color-p-white;
+  }
 }
