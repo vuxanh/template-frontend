@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./feture.module.scss";
+import styles from "./feature.module.scss";
 import { Tab } from "./tab/tab";
 import hmr from "assets/home/feature/hmr.jpg";
 import architecture from "assets/home/feature/architecture.jpg";

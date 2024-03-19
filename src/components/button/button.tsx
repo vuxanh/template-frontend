@@ -1,12 +1,10 @@
-import { ReactNode } from "react";
+import { PropsWithChildren, ReactNode } from "react";
 import styles from "./button.module.scss";
 import classNames from "classnames";
 
-interface ButtonProps {
-  children: ReactNode;
+interface ButtonProps extends PropsWithChildren<Partial<Omit<HTMLButtonElement, "children">>> {
   onClick?: () => void;
   isPressed?: boolean;
-  className?: string;
 }
 
 export const Button = ({ children, onClick, isPressed, className }: ButtonProps) => {

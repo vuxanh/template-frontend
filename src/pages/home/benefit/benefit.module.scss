@@ -1,0 +1,51 @@
+.root {
+  padding: 25vh 0;
+  background: linear-gradient($color-s-grey 0%, $color-primary 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $color-p-white;
+}
+
+.content {
+  max-width: 1044px;
+}
+
+.title {
+  margin-bottom: $space-m;
+}
+
+.description {
+  margin-bottom: $space-l;
+}
+
+.tick-row {
+  width: 100%;
+  display: flex;
+}
+
+.tick {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  gap: $space-m;
+  align-items: center;
+
+  &-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: $space-m;
+    background-color: $color-s-grey;
+    box-shadow: 2px 5px 5px rgba($color: $color-p-black, $alpha: 0.5);
+
+    svg {
+      fill: $color-primary;
+    }
+  }
+
+  &-title {
+    font-weight: 600;
+  }
+}

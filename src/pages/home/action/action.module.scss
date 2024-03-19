@@ -1,0 +1,37 @@
+.root {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: $color-primary;
+  color: $color-p-white;
+  padding: 10vh 0 40vh;
+}
+
+.description {
+  margin-bottom: $space-l;
+}
+
+.form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: $space-m;
+
+  input {
+    all: unset;
+    background-color: $color-s-grey;
+    border-radius: 6px;
+    padding: $space-s;
+    min-width: 20rem;
+    color: $color-p-black;
+    box-shadow: 2px 2px 5px rgba($color: $color-p-black, $alpha: 0.3);
+
+    &:last-of-type {
+      margin-bottom: $space-s;
+    }
+  }
+}
+
+.submit {
+  width: fit-content;
+}
