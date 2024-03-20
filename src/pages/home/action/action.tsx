@@ -24,6 +24,7 @@ export const Action = () => {
         <input className={styles["text-box"]} {...register("email")} placeholder="Enter your email" type="email" required></input>
         <label htmlFor="newsletter" className={styles["newsletter"]}>
           <input type="checkbox" {...register("newsletter")} id="newsletter" />
+          <span className={styles["checkmark"]} />
           Yes, sign me up for your newsletter! Stay informed about the latest news, tips, and special offers.
         </label>
         <Button className={styles["submit"]} type="submit">

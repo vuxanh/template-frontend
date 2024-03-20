@@ -4,7 +4,7 @@
   align-items: center;
   background-color: $color-primary;
   color: $color-p-white;
-  padding: 10vh 0 40vh;
+  padding: 0 0 20vh;
 }
 
 .description {
@@ -25,9 +25,16 @@
   padding: $space-s;
   color: $color-p-black;
   box-shadow: 2px 2px 5px rgba($color: $color-p-black, $alpha: 0.3);
+
+  &::placeholder {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
 }
 
 .newsletter {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,9 +42,34 @@
   cursor: pointer;
   margin-bottom: $space-s;
 
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid $color-p-white;
+    border-radius: 4px;
+
+    &:after {
+      content: "✔";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      left: 2px;
+      font-size: 0.8rem;
+      transition: opacity 0.1s ease;
+    }
+  }
+
   input {
     width: 2rem;
     cursor: pointer;
+    opacity: 0;
+
+    &:checked ~ .checkmark::after {
+      opacity: 1;
+    }
   }
 }
 
