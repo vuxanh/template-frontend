@@ -14,24 +14,34 @@
 .form {
   display: flex;
   flex-flow: column;
-  align-items: center;
+  max-width: 25rem;
   gap: $space-m;
+}
+
+.text-box {
+  all: unset;
+  background-color: $color-s-grey;
+  border-radius: 6px;
+  padding: $space-s;
+  color: $color-p-black;
+  box-shadow: 2px 2px 5px rgba($color: $color-p-black, $alpha: 0.3);
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-xs;
+  cursor: pointer;
+  margin-bottom: $space-s;
 
   input {
-    all: unset;
-    background-color: $color-s-grey;
-    border-radius: 6px;
-    padding: $space-s;
-    min-width: 20rem;
-    color: $color-p-black;
-    box-shadow: 2px 2px 5px rgba($color: $color-p-black, $alpha: 0.3);
-
-    &:last-of-type {
-      margin-bottom: $space-s;
-    }
+    width: 2rem;
+    cursor: pointer;
   }
 }
 
 .submit {
   width: fit-content;
+  align-self: center;
 }

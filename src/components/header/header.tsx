@@ -3,9 +3,9 @@ import styles from "./header.module.scss";
 const Header = () => {
   return (
     <header className={styles["root"]}>
-      <div className={styles["icon"]}>
+      <a className={styles["icon"]} href="/">
         <img src="/vite.svg" />
-      </div>
+      </a>
     </header>
   );
 };
