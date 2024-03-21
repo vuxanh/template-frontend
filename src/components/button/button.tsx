@@ -1,4 +1,4 @@
-import { PropsWithChildren, ReactNode } from "react";
+import { PropsWithChildren } from "react";
 import styles from "./button.module.scss";
 import classNames from "classnames";
 

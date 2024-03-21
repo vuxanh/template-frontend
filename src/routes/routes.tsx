@@ -4,7 +4,7 @@ import HomePage from "../pages/home/home";
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: HomePage(),
+    element: <HomePage />,
   },
 ]);
 
