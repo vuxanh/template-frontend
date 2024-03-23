@@ -3,8 +3,6 @@ import { api } from "../api/api";
 import store, { useApiStore } from "../store/store";
 
 export const useApi = <T = any>(storePath: string, url?: string) => {
-  console.log("called");
-
   const [data, setData] = useState<T>();
   const { add } = useApiStore();
 

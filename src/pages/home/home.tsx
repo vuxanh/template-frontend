@@ -8,8 +8,6 @@ import styles from "./home.module.scss";
 const HomePage = () => {
   const homeData = useApi("home");
 
-  console.log(homeData);
-
   return (
     <div className={styles["body"]}>
       <Hero />
