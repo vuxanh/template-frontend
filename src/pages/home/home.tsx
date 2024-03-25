@@ -1,13 +1,16 @@
-import { useApi } from "../../repository/useApi";
+import { useData } from "../../repository/useData";
 import { Action } from "./action/action";
 import { Benefit } from "./benefit/benefit";
 import { Feature } from "./feature/feature";
-import { Hero } from "./hero/hero";
+import { Hero, HeroData } from "./hero/hero";
 import styles from "./home.module.scss";
 
-const HomePage = () => {
-  const homeData = useApi("home");
+interface HomePageData {
+  hero: HeroData;
+}
 
+const HomePage = () => {
+  useData<HomePageData>("home");
   return (
     <div className={styles["body"]}>
       <Hero />
